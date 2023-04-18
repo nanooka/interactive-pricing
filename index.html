@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+    </header>
+    <main>
+      <div class="container">
+        <div class="pricing">
+          <h3>100K PAGEVIEWS</h3>
+          <input
+            class="range"
+            type="range"
+            value="50"
+            min="0"
+            max="100"
+            onchange="rangeSlider(this.value)"
+            onmousemove="rangeSlider(this.value)"
+          />
+          <div class="price">
+            <span id="rangeValue">$50.00</span>
+            <span class="month">/ month</span>
+          </div>
+        </div>
+        <div class="billing">
+          <a>Monthly Billing</a>
+          <div class="turn">
+            <div class="circle"></div>
+          </div>
+          <a>Yearly Billing</a>
+          <div class="discount">
+            <span class="sale">-25% <strong>discount</strong> </span>
+          </div>
+        </div>
+        <hr class="line" />
+        <div class="last">
+          <div class="benefits">
+            <div>
+              <img
+                class="icon"
+                src="./assets/images/icon-check.svg"
+                alt="check icon"
+              />
+              <a>Unlimited websites</a>
+            </div>
+            <div>
+              <img
+                class="icon"
+                src="./assets/images/icon-check.svg"
+                alt="check icon"
+              />
+              <a>100% data ownership</a>
+            </div>
+            <div>
+              <img
+                class="icon"
+                src="./assets/images/icon-check.svg"
+                alt="check icon"
+              />
+              <a>Email reports</a>
+            </div>
+          </div>
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </main>
+    <script src="assets/scripts/scripts.js"></script>
+  </body>
+</html>
