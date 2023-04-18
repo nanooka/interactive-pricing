@@ -5,8 +5,8 @@
 body {
   font-family: "Manrope";
   padding: 24px;
-  background-image: url(/assets/images/pattern-circles.svg),
-    url(/assets/images/bg-pattern.svg);
+  background-image: url(./assets/images/pattern-circles.svg),
+    url(./assets/images/bg-pattern.svg);
   background-repeat: no-repeat;
   background-position: 50% 70px, 0 0;
 }
@@ -71,7 +71,7 @@ h3 {
   outline: none;
 }
 .range::-webkit-slider-thumb {
-  background-image: url(/assets/images/icon-slider.svg);
+  background-image: url(./assets/images/icon-slider.svg);
   background-repeat: no-repeat;
   background-position: 9px 13px;
   box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
